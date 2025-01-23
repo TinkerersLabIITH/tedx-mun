@@ -11,9 +11,9 @@ import phone from '../../assets/phone.png'
 const MobileFooter = () => {
   return (
     <footer className="footer">
-      <div className="footer-container">
+      <div className="footer-container" style={{justifyContent:"none", padding: "0"}}>
         {/* TEDx Logo Section */}
-        <div className="footer-section">
+        <div className="footer-section" style={{display:"flex",flexDirection:"row", alignItems:"center"}}>
           <div className="footer-section logos">
             <div>
               <img
@@ -23,8 +23,36 @@ const MobileFooter = () => {
               />
             </div>
           </div>
-          <h2>TEDX<span style={{color:"white"}}>MUN</span></h2>
-          <p className="para">IIT Hyderabad</p>
+          <div style={{marginLeft:"10px"}}>
+            <h2 style={{marginLeft: "0", fontWeight: "bolder", marginBottom: "0.2rem"}}>TEDX<span style={{color:"white"}}>MUN</span></h2>
+            <p className="para" style={{textAlign: "left", marginLeft: "0"}}>IIT Hyderabad</p>
+          </div>
+        </div>
+
+
+        {/* Contact Section */}
+        <div className="footer-section contact" style={{textAlign: "left", width: "100%"}}>
+          <h3>Contact Us</h3>
+          <div className="contact-item">
+            <img src={mail} alt="Mail" className="contact-icon" />
+            <a href="mailto:tedxiithyderabad@iith.ac.in" style={{ color: "white" }}>
+              tedxiithyderabad@iith.ac.in
+            </a>
+          </div>
+          <div className="contact-item">
+            <img src={mail} alt="Mail" className="contact-icon" />
+            <a href="mailto:tinkerers@iith.ac.in" style={{ color: "white" }}>
+              tinkerers@iith.ac.in
+            </a>
+          </div>
+          <div className="contact-item">
+            <img src={phone} alt="Phone" className="contact-icon" />
+            <p style={{margin: "0"}}>9090909090</p>
+          </div>
+          <div className="contact-item">
+            <img src={phone} alt="Phone" className="contact-icon" />
+            <p style={{margin: "0"}}>9898989898</p>
+          </div>
         </div>
 
         {/* Partner Logos Section */}
@@ -49,30 +77,6 @@ const MobileFooter = () => {
           </div>
         </div>
 
-        {/* Contact Section */}
-        <div className="footer-section contact">
-          <h3>Contact Us</h3>
-          <div className="contact-item">
-            <img src={mail} alt="Mail" className="contact-icon" />
-            <a href="mailto:tedxiithyderabad@iith.ac.in" style={{ color: "white" }}>
-              tedxiithyderabad@iith.ac.in
-            </a>
-          </div>
-          <div className="contact-item">
-            <img src={mail} alt="Mail" className="contact-icon" />
-            <a href="mailto:tinkerers@iith.ac.in" style={{ color: "white" }}>
-              tinkerers@iith.ac.in
-            </a>
-          </div>
-          <div className="contact-item">
-            <img src={phone} alt="Phone" className="contact-icon" />
-            <p>9090909090</p>
-          </div>
-          <div className="contact-item">
-            <img src={phone} alt="Phone" className="contact-icon" />
-            <p>9898989898</p>
-          </div>
-        </div>
       </div>
       <div className="footer-bottom">
         <p>

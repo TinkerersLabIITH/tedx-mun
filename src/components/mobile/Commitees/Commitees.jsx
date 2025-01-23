@@ -73,25 +73,25 @@ function MobileCommittees() {
     <div className="Committees" style={{margin:"auto", marginTop:"-5vw"}}>
       {/* Committees Section */}
       <section id="committees" className="committees-section">
-        <h2 className="committee-heading" style={{fontSize:"3vw",fontWeight:"900"}}>COMMITTEES</h2>
-        <p className="description">
-          <span style={{fontWeight:"900"}}>"Ideas Worth Sharing: "</span>We believe that for humankind to truly progress and achieve our
+        <h2 className="committee-heading" style={{fontSize:"3vh",fontWeight:"900"}}>COMMITTEES</h2>
+        <p className="description" style={{fontSize:"16px"}}>
+          <span style={{fontWeight:"900"}}>"Ideas Worth Sharing": </span>We believe that for humankind to truly progress and achieve our
           potential, the exchange of ideas between people is essential. TED helps us list the problems
           people face even in the remotest corners of the world. This promotes discussions to come up
           with solutions and ideas from pioneers and amateurs.
         </p>
-        <div className="cards-container">
+        <div className="cards-container" style={{alignItems: "center"}}>
           {committees.map((committee) => (
             <div
               key={committee.id}
               className="card"
-              style={{ backgroundImage: `url(${committee.background})` }}
+              style={{ backgroundImage: `url(${committee.background})`, margin: "20% 0" }}
             >
               <div className="icon">
                 <img src={logo} alt={`${committee.title} logo`} />
               </div>
-              <h3>{committee.title}</h3>
-              <p><span style={{fontWeight:"900"}}>"Ideas Worth Sharing: "</span>{committee.description}</p>
+              <h3 style={{fontSize: "32px"}}>{committee.title}</h3>
+              <p style={{fontSize: "16px"}}><span style={{fontWeight:"900"}}>"Ideas Worth Sharing: "</span>{committee.description}</p>
             </div>
           ))}
         </div>

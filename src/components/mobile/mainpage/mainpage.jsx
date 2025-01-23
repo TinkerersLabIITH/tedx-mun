@@ -11,24 +11,25 @@ function MobileMainPage() {
       <div style={{width:"90%",borderRadius:"10px", height:"60vh",}}>
         <Scroll />
       </div>
-      <div className="about-us-container" style={{marginBottom:"10%",marginTop:"10%"}}>
-        <div className="about-us-title" style={{ margin:"auto",marginBottom: "1.5rem" }}>
-          ABOUT <span style={{ color: "white", fontSize: "48px" }}>US</span>
+      <div className="about-us-container" style={{margin: "10% 0", width:"100%", paddingLeft: "0", paddingRight: "0"}}>
+        <div className="about-us-title" style={{ margin:"auto",marginBottom: "1.5rem",fontSize: "24px" }}>
+          ABOUT <span style={{ color: "white" }}>US</span>
         </div>
         <div
           className="section1"
           style={{
+            width: "100%",
             padding: "1.5rem",
             background: "#1c1c1c",
             borderRadius: "10px",
           }}
         >
-          <div className="section-title">
+          <div className="section-title" style={{fontSize: "24px"}}>
             What is a&nbsp;
-            <span style={{ color: "#f95107", fontSize: "36px" }}>MUN</span> ?
+            <span style={{ color: "#f95107" }}>MUN</span> ?
           </div>
-          <div className="section-content">
-            <span style={{ fontWeight: "950", fontSize: "20px" }}>
+          <div className="section-content" style={{fontSize: "16px"}}>
+            <span style={{ fontWeight: "950" }}>
               "Ideas Worth Sharing"
             </span>
             : We believe that for humankind to truly progress and achieve our
@@ -45,12 +46,13 @@ function MobileMainPage() {
         <div
           className="section2"
           style={{
+            width: "100%",
             padding: "1.5rem",
             background: "#1c1c1c",
             borderRadius: "10px",
           }}
         >
-          <div className="section-title">What Do we Do ?</div>
+          <div className="section-title" style={{fontSize: "24px"}}>What Do we Do ?</div>
           <div
             className="section-row"
             style={{
@@ -60,8 +62,11 @@ function MobileMainPage() {
               gap: "1vw",
             }}
           >
-            <div className="section-content" style={{ flex: 1 }}>
-              <span style={{ fontWeight: "950", fontSize: "20px" }}>
+            <div>
+              <img src={IMG1} alt="MUN Event" className="section-image" style={{borderRadius: "5px", marginBottom: "15px"}} />
+            </div>
+            <div className="section-content" style={{ flex: 1, fontSize: "16px" }}>
+              <span style={{ fontWeight: "950" }}>
                 "Ideas Worth Sharing"
               </span>{" "}
               : We believe that for humankind to truly progress and achieve our
@@ -74,52 +79,47 @@ function MobileMainPage() {
               aim to play our little role in guiding these embryos and nurture
               them with the hope that they help us progress and march forward.
             </div>
-            <div>
-              <img src={IMG1} alt="MUN Event" className="section-image" />
-            </div>
           </div>
         </div>
       </div>
       <div
         className="mun25-container"
         style={{
-          backgroundImage: `url(${BACKMUN25IMG})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          flexDirection: "column",
+          paddingLeft: "0",
+          paddingRight: "0",
+          marginTop: "30%",
+          height: "auto",
+          background: "none"
         }}
       >
-        <div className="mun25-content">
-          {/* Left Section */}
-          <div className="mun25-logo">
-            <img src={MUN25IMG} alt="MUN 25 Logo" />
+        <div className="mun25-content" style={{width: "100%", paddingLeft: "0", paddingRight: "0", paddingBottom: "4.5rem"}}>
+          <h1 className="mun25-title" style={{fontSize: "32px"}}>MUN <span style={{color:"white"}}>25</span></h1>
+          <p className="mun25-date">Date - 32 / 13 / 2025</p>
+          <div className="mun25-logo" style={{width: "100%"}}>
+            <img src={MUN25IMG} alt="MUN 25 Logo" style={{maxWidth: "90%"}} />
           </div>
-
-          {/* Right Section */}
-          <div className="mun25-details">
-            <h1 className="mun25-title">MUN <span style={{color:"white",fontSize:"max(20px,3.5vw)"}}>25</span></h1>
-            <p className="mun25-date">Date - 32 / 13 / 2025</p>
-            <div className="mun25-agendas">
-              <h2 className="mun25-agenda-title">Agendas</h2>
-              <ul className="mun25-agenda-list">
-                <li>
-                  UNGA DISEC: Lorem ipsum, dolor sit amet consectetur
-                  adipisicing elit. Velit, rem aut nemo alias accusamus magnam
-                  repellendus nam enim.
-                </li>
-                <li>
-                  UNHRC: Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Earum beatae, excepturi sunt fugit quos consequatur
-                  reiciendis culpa asperiores.
-                </li>
-                <li>
-                  UNHRC: Lorem ipsum dolor sit, amet consectetur adipisicing
-                  elit. Porro eos nam aliquam. Ipsam hic laudantium quas
-                  corrupti fugit, rem possimus.
-                </li>
-              </ul>
-            </div>
-            <button className="register-button">Register Now</button>
+          <div className="mun25-agendas" style={{padding: "1.5rem 1.5rem 0 1.5rem"}}>
+            <h2 className="mun25-agenda-title" style={{textAlign: "left", fontSize: "24px"}}>Agendas</h2>
+            <ul className="mun25-agenda-list">
+              <li style={{fontSize: "16px", textAlign: "left"}}>
+                UNGA DISEC: Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Velit, rem aut nemo alias accusamus magnam
+                repellendus nam enim.
+              </li>
+              <li style={{fontSize: "16px", textAlign: "left"}}>
+                UNHRC: Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Earum beatae, excepturi sunt fugit quos consequatur
+                reiciendis culpa asperiores.
+              </li>
+              <li style={{fontSize: "16px", textAlign: "left"}}>
+                UNHRC: Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Porro eos nam aliquam. Ipsam hic laudantium quas
+                corrupti fugit, rem possimus.
+              </li>
+            </ul>
           </div>
+          <button className="register-button" style={{width: "90%", padding: "15px", fontSize: "20px"}}>Register Now</button>
         </div>
       </div>
     </div>

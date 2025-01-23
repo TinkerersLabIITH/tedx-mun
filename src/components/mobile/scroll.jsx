@@ -40,14 +40,15 @@ function MobileScroll() {
                 top: "50%",
                 left: "50%",
                 transform: "translate(-50%, -50%)",
-                width: "20%", // Adjust as needed
+                width: "50%", // Adjust as needed
                 objectFit: "contain",
               }}
             />
             <div
               style={{
                 display: "flex",
-                height: "70vh",
+                flexDirection: "column",
+                height: "60vh",
                 width: "100%",
                 margin: "0",
               }}
@@ -57,15 +58,14 @@ function MobileScroll() {
                   flex: "1",
                   overflow: "hidden",
                   transition: "all 0.5s ease-in-out",
-                  borderRadius: "10px 0 0 10px",
+                  borderRadius: "5px 5px 0 0",
                 }}
               >
                 <img
                   src={slide.image1}
                   alt={`${slide.text} - Image 1`}
                   style={{
-                    width: "100%",
-                    height: "65vh",
+                    height: "30vh",
                     objectFit: "cover",
                   }}
                 />
@@ -75,15 +75,14 @@ function MobileScroll() {
                   flex: "1",
                   overflow: "hidden",
                   transition: "all 0.5s ease-in-out",
-                  borderRadius: "0 10px 10px 0",
+                  borderRadius: "0 0 5px 5px",
                 }}
               >
                 <img
                   src={slide.image2}
                   alt={`${slide.text} - Image 2`}
                   style={{
-                    width: "100%",
-                    height: "65vh",
+                    height: "30vh",
                     objectFit: "cover",
                   }}
                 />
