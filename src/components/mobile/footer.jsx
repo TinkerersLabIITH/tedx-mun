@@ -1,14 +1,14 @@
 import React from 'react';
 import './footer.css'; // Create this CSS file for styling
-import TedxMUN from '../assets/TedxMUN.png';
-import TedxTl from '../assets/TedxTl.png';
-import youtube from '../assets/youtube.png';
-import linkedIn from '../assets/linkedIn.png';
-import instagram from '../assets/instagram.png';
-import mail from '../assets/mail.png';
-import phone from '../assets/phone.png'
+import TedxMUN from '../../assets/TedxMUN.png';
+import TedxTl from '../../assets/TedxTl.png';
+import youtube from '../../assets/youtube.png';
+import linkedIn from '../../assets/linkedIn.png';
+import instagram from '../../assets/instagram.png';
+import mail from '../../assets/mail.png';
+import phone from '../../assets/phone.png'
 
-const Footer = () => {
+const MobileFooter = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -84,4 +84,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default MobileFooter;

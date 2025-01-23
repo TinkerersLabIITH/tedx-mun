@@ -1,15 +1,15 @@
 import React from "react";
 import "./Commitees.css";
-import wto from "../../assets/wto.png";
-import unsc from "../../assets/unsc.png";
-import who from "../../assets/who.png";
-import unicef from "../../assets/unicef.png";
-import unesco from "../../assets/unesco.png";
-import imf from "../../assets/imf.png";
-import unhrc from "../../assets/unhrc.png";
-import fao from "../../assets/fao.png";
-import iaea from "../../assets/iaea.png";
-import logo from "../../assets/logo.png";
+import wto from "../../../assets/wto.png";
+import unsc from "../../../assets/unsc.png";
+import who from "../../../assets/who.png";
+import unicef from "../../../assets/unicef.png";
+import unesco from "../../../assets/unesco.png";
+import imf from "../../../assets/imf.png";
+import unhrc from "../../../assets/unhrc.png";
+import fao from "../../../assets/fao.png";
+import iaea from "../../../assets/iaea.png";
+import logo from "../../../assets/logo.png";
 
 const committees = [
   {
@@ -68,7 +68,7 @@ const committees = [
   },
 ];
 
-function Committees() {
+function MobileCommittees() {
   return (
     <div className="Committees" style={{margin:"auto", marginTop:"-5vw"}}>
       {/* Committees Section */}
@@ -100,4 +100,4 @@ function Committees() {
   );
 }
 
-export default Committees;
+export default MobileCommittees;

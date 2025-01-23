@@ -1,11 +1,11 @@
 import React from "react";
 import Scroll from "../scroll";
-import IMG1 from "../../assets/DSC09582 1.png";
-import MUN25IMG from "../../assets/Group 1437254130.png";
-import BACKMUN25IMG from "../../assets/DSC09196 1.png";
+import IMG1 from "../../../assets/DSC09582 1.png";
+import MUN25IMG from "../../../assets/Group 1437254130.png";
+import BACKMUN25IMG from "../../../assets/DSC09196 1.png";
 import "./mainpage.css"; // Importing the CSS file
 
-function MainPage() {
+function MobileMainPage() {
   return (
     <div style={{width:"100%",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center"}}>
       <div style={{width:"90%",borderRadius:"10px", height:"60vh",}}>
@@ -126,4 +126,4 @@ function MainPage() {
   );
 }
 
-export default MainPage;
+export default MobileMainPage;

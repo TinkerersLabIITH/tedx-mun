@@ -1,21 +1,9 @@
-import React, { useState, useEffect } from "react";
-import TEDXIMG from "../assets/TEDx White_T 4.png";
-import TLIMG from "../assets/Group 1437254103.png";
-import COLLABIMG from "../assets/Group 1437254104.png";
+import React from "react";
+import TEDXIMG from "../../assets/TEDx White_T 4.png";
+import TLIMG from "../../assets/Group 1437254103.png";
+import COLLABIMG from "../../assets/Group 1437254104.png";
 
-function Header({ activeMenu, onMenuClick }) {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // Mobile screen width threshold
-    };
-
-    window.addEventListener("resize", handleResize);
-    handleResize(); // Check initial window size
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+function Header({ activeMenu, onMenuClick }) {  
 
   return (
     <div
@@ -25,10 +13,10 @@ function Header({ activeMenu, onMenuClick }) {
         alignItems: "center",
         width: "90%",
         margin: "auto",
-        padding: isMobile ? "2vw" : "1vw",
-        fontSize: isMobile ? "3vw" : "1vw",
-        marginBottom: isMobile ? "5vw" : "5vw",
-        flexDirection: isMobile ? "column" : "row", // Stack items on mobile
+        padding: "1vw",
+        fontSize: "1vw",
+        marginBottom: "5vw",
+        flexDirection: "row",
         position:"sticky",
         top:0,
         zIndex:"10",
@@ -38,35 +26,35 @@ function Header({ activeMenu, onMenuClick }) {
       <div
         style={{
           display: "flex",
-          flexDirection: isMobile ? "column" : "row", // Stack logo images on mobile
+          flexDirection: "row",
           alignItems: "center",
           gap: "2vw",
           backgroundColor: "#1d1d1d",
-          height: isMobile ? "auto" : "4vw",
+          height: "4vw",
           padding: "0 1vw",
           borderRadius: "5px",
           fontWeight: "700",
           width: "100%",
-          justifyContent: "center", // Center logo images on mobile
+          justifyContent: "center",
         }}
       >
         <a href="#" target="_blank" rel="noopener noreferrer">
           <img
             src={TEDXIMG}
             alt="TEDX image"
-            width={isMobile ? "50px" : "70%"} // Adjust image size for mobile
+            width="70%"
           />
         </a>
         <img
           src={COLLABIMG}
           alt="Collab image"
-          width={isMobile ? "16px" : "10%"} // Adjust image size for mobile
+          width="10%"
         />
         <a href="#" target="_blank" rel="noopener noreferrer">
           <img
             src={TLIMG}
             alt="TL image"
-            width={isMobile ? "50px%" : "70%"} // Adjust image size for mobile
+            width="70%"
           />
         </a>
       </div>
@@ -74,15 +62,15 @@ function Header({ activeMenu, onMenuClick }) {
       <div
         style={{
           display: "flex",
-          flexDirection: isMobile ? "column" : "row", // Stack menu on mobile
+          flexDirection:"row",
           gap: "2vw",
           backgroundColor: "#1d1d1d",
-          height: isMobile ? "auto" : "4vw",
+          height: "4vw",
           alignItems: "center",
           padding: "0 1vw",
           borderRadius: "5px",
           width: "80%",
-          justifyContent: "center", // Center menu on mobile
+          justifyContent: "center"
         }}
       >
         <a
@@ -91,7 +79,7 @@ function Header({ activeMenu, onMenuClick }) {
           style={{
             color: activeMenu === "home" ? "#fc5103" : "white",
             textDecoration: "none",
-            fontSize: isMobile ? "4vw" : "1vw", // Adjust font size for mobile
+            fontSize: "1vw"
           }}
         >
           Home
@@ -102,7 +90,7 @@ function Header({ activeMenu, onMenuClick }) {
           style={{
             color: activeMenu === "committees" ? "#fc5103" : "white",
             textDecoration: "none",
-            fontSize: isMobile ? "4vw" : "1vw", // Adjust font size for mobile
+            fontSize: "1vw"
           }}
         >
           Committees
@@ -112,21 +100,21 @@ function Header({ activeMenu, onMenuClick }) {
       <div
         style={{
           display: "flex",
-          flexDirection: isMobile ? "column" : "row", // Stack buttons on mobile
+          flexDirection: "row",
           gap: "1vw",
           width: "100%",
-          justifyContent: "center", // Center buttons on mobile
+          justifyContent: "center",
         }}
       >
         <button
           style={{
             color: "white",
             border: "none",
-            padding: isMobile ? "1vw 2vw" : "0.5rem 1rem", // Adjust button padding for mobile
+            padding: "0.5rem 1rem",
             borderRadius: "5px",
             cursor: "pointer",
             backgroundColor: "#1d1d1d",
-            fontSize: isMobile ? "4vw" : "1vw", // Adjust font size for mobile
+            fontSize: "1vw",
           }}
         >
           Contact
@@ -136,11 +124,11 @@ function Header({ activeMenu, onMenuClick }) {
             backgroundColor: "#ff6600",
             color: "white",
             border: "none",
-            padding: isMobile ? "1vw 2vw" : "1vw 2vw",
+            padding: "1vw 2vw",
             borderRadius: "5px",
             cursor: "pointer",
             fontWeight: "900",
-            fontSize: isMobile ? "4vw" : "1vw", // Adjust font size for mobile
+            fontSize: "1vw",
           }}
         >
           Register Now

@@ -1,12 +1,12 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
-import IMG1 from "../assets/DSC09244 1.png";
-import IMG2 from "../assets/DSC09342 1.png";
-import IMG3 from "../assets/DSC09582 1.png";
-import IMG4 from "../assets/Group 1437254112.png";
+import IMG1 from "../../assets/DSC09244 1.png";
+import IMG2 from "../../assets/DSC09342 1.png";
+import IMG3 from "../../assets/DSC09582 1.png";
+import IMG4 from "../../assets/Group 1437254112.png";
 
-function Scroll() {
+function MobileScroll() {
   const images = [
     {
       text: "First slide",
@@ -132,4 +132,4 @@ function Scroll() {
   );
 }
 
-export default Scroll;
+export default MobileScroll;
