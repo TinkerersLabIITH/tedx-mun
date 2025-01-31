@@ -8,21 +8,9 @@ import IMG4 from "../../assets/Group 1437254112.png";
 
 function MobileScroll() {
   const images = [
-    {
-      text: "First slide",
-      image1: IMG1,
-      image2: IMG2,
-    },
-    {
-      text: "Second slide",
-      image1: IMG2,
-      image2: IMG3,
-    },
-    {
-      text: "Third slide",
-      image1: IMG3,
-      image2: IMG1,
-    },
+    { text: "First slide", image1: IMG1, image2: IMG2 },
+    { text: "Second slide", image1: IMG2, image2: IMG3 },
+    { text: "Third slide", image1: IMG3, image2: IMG1 },
   ];
 
   return (
@@ -30,7 +18,7 @@ function MobileScroll() {
       <Carousel fade>
         {images.map((slide, index) => (
           <Carousel.Item key={index}>
-            {/* IMG4 centered in the carousel */}
+            {/* Centered IMG4 */}
             <img
               src={IMG4}
               alt="Center Image"
@@ -40,7 +28,8 @@ function MobileScroll() {
                 top: "50%",
                 left: "50%",
                 transform: "translate(-50%, -50%)",
-                width: "50%", // Adjust as needed
+                width: "175px",
+                height: "175px",
                 objectFit: "contain",
               }}
             />
@@ -48,14 +37,16 @@ function MobileScroll() {
               style={{
                 display: "flex",
                 flexDirection: "column",
+                alignItems: "center",
                 height: "60vh",
-                width: "100%",
-                margin: "0",
+                justifyContent: "center",
               }}
             >
+              {/* Top Image */}
               <div
                 style={{
-                  flex: "1",
+                  width: "80vw",
+                  height: "300px",
                   overflow: "hidden",
                   transition: "all 0.5s ease-in-out",
                   borderRadius: "5px 5px 0 0",
@@ -65,14 +56,17 @@ function MobileScroll() {
                   src={slide.image1}
                   alt={`${slide.text} - Image 1`}
                   style={{
-                    height: "30vh",
+                    width: "100%",
+                    height: "100%",
                     objectFit: "cover",
                   }}
                 />
               </div>
+              {/* Bottom Image */}
               <div
                 style={{
-                  flex: "1",
+                  width: "80vw",
+                  height: "300px",
                   overflow: "hidden",
                   transition: "all 0.5s ease-in-out",
                   borderRadius: "0 0 5px 5px",
@@ -82,7 +76,8 @@ function MobileScroll() {
                   src={slide.image2}
                   alt={`${slide.text} - Image 2`}
                   style={{
-                    height: "30vh",
+                    width: "100%",
+                    height: "100%",
                     objectFit: "cover",
                   }}
                 />
@@ -106,11 +101,11 @@ function MobileScroll() {
         }
 
         .carousel-control-prev {
-          left: 0;
+          left: 5vw;
           border-radius: 0px 5px 5px 0px;
         }
         .carousel-control-next {
-          right: 0;
+          right: 5vw;
           border-radius: 5px 0 0 5px;
         }
         .carousel-control-prev-icon,
@@ -122,7 +117,7 @@ function MobileScroll() {
         .carousel-control-next:hover,
         .carousel-control-prev:focus,
         .carousel-control-next:focus {
-          background-color: #615a48; /* Same as default */
+          background-color: #615a48;
           box-shadow: none;
         }
       `}
@@ -132,3 +127,4 @@ function MobileScroll() {
 }
 
 export default MobileScroll;
+
