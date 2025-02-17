@@ -155,15 +155,15 @@ function MainPage() {
           {/* Right Section */}
           <div className="mun25-details">
             <h1 className="mun25-title">
-              MUN{" "}
+              X-MUN{" "}
               <span style={{ color: "white", fontSize: "max(20px,3.5vw)" }}>
-                25
+                '25
               </span>
             </h1>
             <p className="mun25-date">Date - 20/ 03/ 2025 - 22/03/2025</p>
             <div className="mun25-agendas">
               <h2 className="mun25-agenda-title">Committees</h2>
-              <ul className="mun25-agenda-list" style={{ fontWeight: "20" }}>
+              <ul className="mun25-agenda-list">
                 <li>United Nations Security Council (UNSC)</li>
                 <li>United Nations Security Council Historic (UNSC)</li>
                 <li>

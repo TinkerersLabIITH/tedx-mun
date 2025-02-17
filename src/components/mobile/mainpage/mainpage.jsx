@@ -184,7 +184,7 @@ function MobileMainPage() {
           }}
         >
           <h1 className="mmun25-title" style={{ fontSize: "32px" }}>
-            MUN <span style={{ color: "white" }}>25</span>
+            X-MUN <span style={{ color: "white" }}>'25</span>
           </h1>
           <p className="mmun25-date">Date - 20/ 03/ 2025 - 22/03/2025</p>
           <div className="mmun25-logo" style={{ width: "100%" }}>
@@ -196,26 +196,26 @@ function MobileMainPage() {
           >
             <h2
               className="mmun25-agenda-title"
-              style={{ textAlign: "left", fontSize: "20px" }}
+              style={{ textAlign: "", fontSize: "20px" }}
             >
-              Agendas
+              Committees
             </h2>
-            <ul className="mmun25-agenda-list">
-              <li>
-                United Nations Security Council <strong>UNSC</strong>
+            <ul className="mmun25-agenda-list" >
+              <li style={{textAlign:"left" }}>
+              United Nations Security Council {" "}<strong>UNSC</strong>
               </li>
-              <li>
-                United Nations Security Council Historic <strong>UNSC</strong>
+              <li style={{textAlign:"left" }}>
+              United Nations Security Council Historic {" "}<strong>UNSC</strong>
               </li>
-              <li>
+              <li style={{textAlign:"left" }}>
                 United Nations Educational, Scientific and Cultural Organization{" "}
                 <strong>UNESCO</strong>
               </li>
-              <li>
-                United Nations Human Rights Council <strong>UNHRC</strong>
+              <li style={{textAlign:"left" }}>
+                United Nations Human Rights Council {" "}<strong>UNHRC</strong>
               </li>
-              <li>
-                United Nations General Assembly <strong>UNGA</strong>
+              <li style={{textAlign:"left" }}>
+                United Nations General Assembly {" "}<strong>UNGA</strong>
               </li>
             </ul>
           </div>
