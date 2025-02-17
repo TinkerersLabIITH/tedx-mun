@@ -63,8 +63,7 @@ color: #ddd;
 .cards-container {
 display: flex;
 flex-wrap: wrap;
-justify-content: center;
-gap: 20px;
+/* justify-content: center; */
 margin-top: 150px;
 margin-bottom: 50px;
 }
@@ -77,11 +76,8 @@ background-position: center;
 background-repeat: no-repeat;
 padding: 20px;
 border-radius: 10px;
-width: 359.8px;
-height: 326.06px;
 text-align: center;
 border: 1px solid #444;
-margin: 60px;
 position: relative;
 color: #fff;
 }
@@ -99,8 +95,6 @@ margin-top: -1vw;
 
 /* Circular Icon Area */
 .icon {
-width: 194.69px;
-height: 194.69px;
 margin: 0 auto;
 background-color: #343434;
 border-radius: 50%;
@@ -113,7 +107,7 @@ position: absolute;
 top: -98px;
 left: 50%;
 transform: translateX(-50%);
-}
+} 
 
 .icon img {
 width: 60%;
