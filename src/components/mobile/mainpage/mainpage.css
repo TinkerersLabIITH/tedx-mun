@@ -1,6 +1,6 @@
 
 
-.about-us-container {
+.mabout-us-container {
   width: 80%;
   margin: auto;
   font-family: "Arial", sans-serif;
@@ -10,7 +10,7 @@
   overflow-x: hidden;
 }
 
-.about-us-title {
+.mabout-us-title {
   font-size: 48px;
   text-align: center;
   font-weight: bold;
@@ -18,61 +18,61 @@
   color: #f95107;
 }
 
-.section1 {
+.msection1 {
   margin: auto;
   margin-bottom: 40px;
   width: 90%;
 }
 
-.section2 {
+.msection2 {
   margin: auto;
   width: 90%;
 }
 
-.section-title {
+.msection-title {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 10px;
   color: #ffffff;
 }
 
-.section-content {
+.msection-content {
   font-size: 20px;
   line-height: 1.6;
   color: #ffffff;
   font-weight: 300;
 }
 
-.section-row {
+.msection-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.section-image {
+.msection-image {
   width: 100%;
   border-radius: 8px;
 }
 
 
 @media (max-width: 768px) {
-  .about-us-container {
+  .mabout-us-container {
     padding: 20px 5%;
   }
 
-  .section-row {
+  .msection-row {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .section-image {
+  .msection-image {
     margin-top: 20px;
     width: 100%;
   }
 }
 
 
-.mun25-container {
+.mmun25-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,7 +85,7 @@
 }
 
 
-.mun25-content {
+.mmun25-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,7 +97,7 @@
 }
 
 
-.mun25-logo {
+.mmun25-logo {
   img {
     width: 100%;
     height: auto;
@@ -108,20 +108,20 @@
 }
 
 
-.mun25-details {
+.mmun25-details {
   display: flex;
   flex-direction: column;
   width: 90%;
 }
 
 
-.mun25-title {
+.mmun25-title {
   font-size: max(20px,3.5vw);
   font-weight: 925;
   color: #ff6700;
 }
 
-.mun25-date {
+.mmun25-date {
   font-size: 18px;
   font-weight: 900;
   translate: 0.1rem -1rem;
@@ -129,29 +129,28 @@
   margin-bottom: 2vw;
 }
 
-.mun25-agenda-title {
+.mmun25-agenda-title {
     font-size: 32px;
     font-weight: 950;
     margin-bottom: 10px;
     color: #ffffff;
 }
 
-.mun25-agenda-list {
-  list-style-type: disc;
+.mmun25-agenda-list {
+  list-style-type: decimal;
   padding: 20px;
   translate:0 -0.5rem;
 }
 
-.mun25-agenda-list li {
-    list-style: disc;
-    font-size: 20px;
+.mmun25-agenda-list li {
+    list-style: decimal;
+    font-size: 14px;
     margin-bottom: 10px;
     color: #ffffff;
-    font-weight: 875;
 }
 
 
-.register-button {
+.mregister-button {
  
   padding: max(3vw,15px) max(6vw,30px);
   background-color: #ff6700;
@@ -164,24 +163,24 @@
   width: 45%;
 }
 
-.register-button:hover {
+.mregister-button:hover {
   background-color: #ff4500;
 }
 
 
 @media (max-width: 768px) {
-  .mun25-content {
+  .mmun25-content {
     flex-direction: column;
     text-align: center;
     gap: 1rem;
   }
 
-  .mun25-logo img {
+  .mmun25-logo img {
     max-width: 80%;
     margin: 0 auto;
   }
 
-  .mun25-details {
+  .mmun25-details {
     align-items: center;
   }
 }
